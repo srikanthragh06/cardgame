@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { cards as constCards, shuffleArray } from "./utils/constants";
 import CardRow from "./CardRow";
-import GameOverSceen from "./GameOverSceen";
+import GameOverScreen from "./GameOverScreen";
 
 export default function App() {
     const [cards, setCards] = useState(constCards);
@@ -48,7 +48,7 @@ export default function App() {
                     />
                 </>
             ) : (
-                <GameOverSceen finalCard={ansCardsRef.current[0]} />
+                <GameOverScreen finalCard={ansCardsRef.current[0]} />
             )}
         </div>
     );

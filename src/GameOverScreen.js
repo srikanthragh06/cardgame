@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-export default function GameOverSceen({ finalCard }) {
+export default function GameOverScreen({ finalCard }) {
     return (
         <div
             className="flex flex-col w-full h-screen justify-center items-center border- border-white py-2 
